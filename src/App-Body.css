@@ -1,0 +1,436 @@
+:root {
+    --illini-orange: #FF5F05;
+    --illini-blue: #13294B;
+    --separator-gray: #e0e0e0;
+}
+  
+body {
+    margin: 0;
+    font-family: 'NanumSquare', Arial, sans-serif;
+}
+  
+.App {
+    text-align: center;
+}
+
+.body-content {
+    max-width: 2800px;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 120px;
+}
+
+.body-content-split {
+    /* font-size: 30px; */
+    width: 100%;
+    width: 100%;
+    gap: 80px;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.body-content-fake {
+    width: 100%;
+    border-bottom: 1px solid var(--separator-gray);
+}
+
+.body-content-left {
+    width: 50%;
+    float: left;
+}
+  
+.body-content-logo  {
+    /* float: left; */
+    /* max-width: 10000px; */
+    align-self: flex; /* flex-start || flex-end */
+    margin-bottom: 0%;
+}
+  
+.body-content-logo img {
+    margin-left: -97px;
+    max-width: 100%;
+    height: auto;
+    width: 225;
+    height: 100;
+}
+  
+.body-content-motto {
+    font-weight: 700;
+    font-size: 37px;
+    text-align: left;
+    /* margin: 60px; */
+    margin-bottom: 8px;
+}
+
+.body-content-pr {
+    /* margin: 60px; */
+    text-align: left;
+    max-width: 800px;
+    color: #707372;
+}
+  
+.body-content-apply {
+    width: 100%;
+    box-sizing: border-box;
+    /* border-bottom: 1px solid var(--separator-gray); */
+    /* padding-bottom: 30px; */
+    padding-bottom: 0px;
+    position: relative;
+    text-align: left;
+}
+  
+.body-content-apply a {
+    color: #707372;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+
+    background: linear-gradient(
+        to right,
+        rgb(243, 198, 173),
+        rgba(255, 95, 5, 0.85)
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+
+    position: relative;
+    transition: transform 0.2s ease;
+}
+
+.body-content-apply a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background: var(--illini-orange);
+    transition: width 0.3s ease;
+}
+  
+.body-content-apply a:hover{
+    transform: translateY(-1px);
+}
+
+.body-content-apply a:hover::after {
+    width: 100%;
+}
+
+.body-content-right {
+    width: 50%;
+    float: right;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    box-shadow: inset 3px 0 5px -3px rgba(0, 0, 0, 0.15);
+}
+
+.upcoming-events {
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+
+.events-list {
+    max-height: 500px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 8px;
+    align-items: center;
+}
+
+.event-card {
+    text-align: left;
+    max-width: 500px;
+    min-width: 500px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px 24px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.2 ease;
+}
+
+.event-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+.event-title {
+    margin: 0 0 8px;
+    font-size: 20px;
+    color: var(--illini-orange);
+}
+  
+.event-datetime, .event-location {
+    font-weight: bold;
+    margin: 4px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.event-btn {
+    text-align: right;
+    display: inline-block;
+    align-self: flex-end;
+    margin-top: 12px;
+    padding: 8px 16px;
+    background-color: var(--illini-orange);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+  
+.event-btn:hover {
+    background-color: #e65300;
+}
+
+.what-we-do {
+    font-size: 30px;
+    width: 100%;
+    margin-top: 30px;
+    margin: 60px auto;
+    /* align-items: center; */
+    /* text-align: center; */
+    width: 100%;
+    gap: 80px;
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--separator-gray);
+    /* padding-bottom: 30px; */
+    position: relative;
+    /* background-color: var(--separator-gray); */
+}
+
+.what-we-do-detail {
+    /* font-size: 22px; */
+    margin-left: 120px;
+    margin-right: 60px;
+    max-width: 560px;
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+
+.what-we-do-keywords {
+    text-align: left;
+    width: 50%;
+    float: left;
+    /* background-color: var(--separator-gray); */
+    flex-direction: column;
+    margin: 60px auto;
+    max-width: 700px;
+}
+
+.what-we-do-keywords-detail {
+    font-size: 25px;
+}
+
+.highlight {
+    color: var(--illini-orange);
+}
+
+.placements {
+    font-size: 30px;
+    width: 100%;
+    margin-top: 30px;
+    margin: 60px auto;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--separator-gray);
+}
+
+.placements-main {
+    font-size: 30px;
+    margin-top: -60px;
+    margin-bottom: 16px;
+}
+
+.placements-logos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-items: center;
+    align-items: center;
+}
+
+.placement-logo {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.contact-sponsor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: -60px;
+}
+
+.contact-sponsor-main {
+    text-align: center;
+    margin: 0;
+}
+
+.contact-us {
+    /* margin-top: 30px; */
+    display: flex;
+    gap: 80px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 60px;
+}
+
+.contact-us-logo {
+    flex: 1;
+    display: flex;
+}
+
+.contact-us-logo img {
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+}
+
+.contact-us-main {
+    margin-top: 50px;
+    flex-direction: column;
+    flex: 1;
+    display: flex;
+    text-align: left;
+    font-size: 35px;
+    /* margin-bottom: 40px; */
+}
+
+.contact-us-main-detail {
+    color: #4a4a4a;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 200;
+    /* margin-bottom: 40px; */
+}
+
+.contact-us-discord {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.contact-us-discord a {
+    color: #4a4a4a;
+    text-decoration: underline;
+    text-decoration-color: var(--separator-gray);
+    /* 원하시면 아래 두 줄을 추가해서 hover 효과를 줄 수 있습니다 */
+    transition: color 0.2s;
+}
+.contact-us-discord a:hover {
+    color: var(--illini-blue);
+}
+
+.contact-us-linkedin {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-us-linkedin a {
+    color: #4a4a4a;
+    text-decoration: underline;
+    text-decoration-color: var(--separator-gray);
+    transition: color 0.2s;
+}
+.contact-us-linkedin a:hover {
+    color: var(--illini-blue);
+}
+
+
+/* for mobile 430px or lower */
+@media screen and (max-width: 430px) {
+    .body-content {
+      margin: 20px auto;
+      padding: 0 16px;
+    }
+  
+    .body-content-split {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: stretch;
+      gap: 24px;
+    }
+  
+    .body-content-left {
+      width: 100% !important;
+      float: none !important;
+    }
+    
+    .body-content-right {
+      width: 100% !important;
+      float: none !important;
+    }
+
+    .body-content-apply {
+        text-align: center;
+    }
+
+    .body-content-logo img {
+        margin-left: 0;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 300px;
+    }
+  
+    .events-list {
+      max-height: none;
+      padding-right: 0;
+    }
+    .event-card {
+      min-width: auto;
+      max-width: 100%;
+    }
+  
+    .what-we-do {
+      padding: 0;
+      border: none;
+    }
+    .what-we-do-detail,
+    .what-we-do-keywords {
+      float: none;
+      width: 100% !important;
+      margin: 0 0 24px;
+      text-align: left;
+    }
+    .what-we-do-keywords {
+      margin-bottom: 40px;
+    }
+  
+    .contact-sponsor,
+    .contact-us {
+      flex-direction: column !important;
+      align-items: center;
+      margin: 40px 0;
+    }
+    .contact-us-logo,
+    .contact-us-main {
+      width: 100%;
+      margin: 0 0 24px;
+      text-align: center;
+    }
+    .contact-us-main-detail {
+      text-align: center;
+    }
+}
