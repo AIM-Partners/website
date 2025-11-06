@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../icons/aim_logo.svg'
+// import logo from '../icons/alpha-investment-management-high-resolution-logo-transparent (1).png'
 import samsung from '../icons/company_icons/samsung_logo.svg'
 import pwc from '../icons/company_icons/pwc_logo.svg'
 import kpmg from '../icons/company_icons/kpmg_logo.svg';
@@ -12,34 +13,43 @@ import lg from '../icons/company_icons/lg_logo.svg'
 import prot from '../icons/company_icons/protiviti_logo.svg'
 import bnp from '../icons/company_icons/bnp-paribas_logo.svg'
 import sc from '../icons/company_icons/standard-chartered_logo.svg'
+import BlurText from './BlurText';
+import wso from '../icons/partner_icons/wso.svg'
 // import image from '../images/img.jpg'
 
 export default function MainContent() {
   const events = [
     {
-      title: 'First Info Night: Fall 2025',
-      datetime: 'Tue, Sep 2 2025 · 6:00 PM - 8:00 PM CST',
-      location: 'Digital Computer Lab room #1310',
-      description: 'Join us for a walkthrough of this semester’s application process, meet the leadership team, and ask any questions.',
-      formURL: 'https://docs.google.com/forms/d/e/1FAIpQLSfbky-jWiNfTXGP7tUGjrT_EDqFcBYR8RCqOwJIQ1FWEtGT8g/viewform?usp=dialog'
+      title: 'Investment Banking Bootcamp',
+      datetime: 'Sep 28 2025 · 12:00 PM CST',
+      location: 'TBD',
+      description: 'Host: Alan Rodriguez Villares (10+ years IB experience at J.P. Morgan, Harris Williams, Santander)',
+      formURL: 'https://docs.google.com/forms/d/e/1FAIpQLSc_3aeNqWs-Ov_tWFUBdA6m2Sa1j_2HXmyuIe-mclqMr7zzmQ/viewform',
     },
     {
-      title: 'Second Info Night: Fall 2025',
-      datetime: 'Thur, Sep 4 2025 · 6:00 PM - 8:00 PM CST',
-      location: 'Digital Computer Lab room #1310',
-      description: 'Join us for a walkthrough of this semester’s application process, meet the leadership team, and ask any questions.',
-      formURL: 'https://docs.google.com/forms/d/e/1FAIpQLSdcck1WoNwbLcK4gQguv4g7gpB8WpC3MP4uSZxjFL_Cdw7Ssw/viewform?usp=dialog'
+      title: 'Q&A Session',
+      datetime: 'Oct 5 2025 · 2:00 PM CST',
+      location: 'TBD',
+      description: 'Host: Tim Weil (Experienced professional in high finance)',
+      formURL: 'https://docs.google.com/forms/d/e/1FAIpQLScr4WG6f_7nCwmU24TxsA0UIP0elG-bPSG_b04G9DPLGjXbTg/viewform',
+    },
+    {
+      title: 'Q&A Session',
+      datetime: 'Oct 10 2025 · 4:00 PM CST',
+      location: 'TBD',
+      description: 'Host: Patrick Curtis (Founder of Wall Street Oasis)',
+      formURL: 'https://docs.google.com/forms/d/e/1FAIpQLSfQ5XikG9JFmJl4rC4FgprvBfADwOwDv8GOOL46hrupASTABg/viewform',
     },
     {
       title: 'General Meeting',
       datetime: 'Wed, Sep 10 2025 · 6:00 PM CST',
-      location: 'TBD',
+      location: 'Digital Computer Lab Room 1310',
       description: 'General Meeting'
     },
     {
       title: 'General Meeting',
       datetime: 'Wed, Sep 17 2025 · 6:00 PM CST',
-      location: 'TBD',
+      location: 'Digital Computer Lab Room 1310',
       description: 'General Meeting'
     },
     {
@@ -125,25 +135,25 @@ export default function MainContent() {
                 <div className="body-content-apply">
                     <h2>
                         <a
-                            href='https://docs.google.com/forms/d/e/1FAIpQLSf0xBY2sK0ub7SwoebbNJBez5PkF6OXDPZfKlCr6y5IqWJdlw/viewform?usp=dialog'
+                            href='https://aim-illinois.com/projects'
                             target='_blank'
                             rel='noopener noreferrer'
                         >
-                          Apply for Fall 2025!
+                          Check Out Our October Company Research Report!
                         </a>
                     </h2>
                 </div>
-                <div className="body-content-apply">
+                {/* <div className="body-content-apply">
                     <h2>
                         <a
-                            href='https://docs.google.com/forms/d/e/1FAIpQLScwqNQkE8YHhnvLmvr5jeAgJA5ZqG4LoFVKOxz9rxg-c2_krQ/viewform?usp=dialog'
+                            href='https://docs.google.com/forms/d/e/1FAIpQLSeUlwm6Wrf624wpbh93zgeEiysPIfBSghkcxj4PUhzy7vXnpg/viewform?usp=header'
                             target='_blank'
                             rel='noopener noreferrer'
                         >
-                          Apply Team Lead Positions for Fall 2025!
+                          Apply for the Software Team Lead Position for Fall 2025!
                         </a>
                     </h2>
-                </div>
+                </div> */}
             </div>
             <div className='body-content-right'>
                 <h2 className='upcoming-events'>Upcomping Events</h2>
@@ -172,7 +182,17 @@ export default function MainContent() {
       
         <div className='body-content-fake'></div>
         <div className='what-we-do'>
-          <h2 className='what-we-do-main'>What We Do</h2>
+          <h2 className='what-we-do-main'>
+            <BlurText
+                text="What We Do"
+                delay={150}
+                animateBy="words"
+                direction="top"
+                // onAnimationComplete={handleAnimationComplete}
+                className="blur-text"
+            />
+              {/* What We Do */}
+          </h2>
           <div className='what-we-do-content'>
               <div className='what-we-do-detail'>
                 <h2>At AIM Partners, we enhance ourselves to <span className='highlight'>learn while we earn</span>. <br/><br/>We host weekly workshops, mentor beginners in finance, and
@@ -187,9 +207,31 @@ export default function MainContent() {
               </div>
           </div>
         </div>
+        <div className='partners'>
+          <h2 className='partners-main'>
+            <BlurText
+                text="Partners"
+                delay={150}
+                animateBy='letters'
+                direction='top'
+                className='blur-text'
+            />
+          </h2>
+          <img src={wso} alt='WSO logo' className='partner-logo'/>
+        </div>
         <div className='placements'>
             <div className='placements-main'>
-                  <h2 className='placements-main-text'>Placements</h2>
+                  <h2 className='placements-main-text'>
+                      <BlurText
+                        text="Placements"
+                        delay={50}
+                        animateBy="letters"
+                        direction="top"
+                        // onAnimationComplete={handleAnimationComplete}
+                        className="blur-text"
+                      />
+                      {/* Placements */}
+                  </h2>
                   <div className='placements-logos'>
                       <img src={pwc} alt='PwC logo' className='placement-logo'/>
                       <img src={kpmg} alt='KPMG logo' className='placement-logo'/>
@@ -207,7 +249,8 @@ export default function MainContent() {
             </div>
         </div>
         <div className='contact-sponsor'>
-            <h3 className='contact-sponsor-main'>Interested in sponsoring us? Reach out at <span className='highlight'>aimpartnersuiuc@gmail.com</span>!</h3>
+            <h3 className='contact-sponsor-main'>Interested in sponsoring us? Reach out at {' '}
+              <a className='highlight' href='mailto:aimpartnersuiuc@gmail.com'>aimpartnersuiuc@gmail.com</a>!</h3>
         </div>
         <div className='contact-us'>
             <div className='contact-us-logo'>
@@ -217,7 +260,12 @@ export default function MainContent() {
                 Contact Us
 
                 <div className='contact-us-main-detail'>
-                    <p className='email'>aimpartnersuiuc@gmail.com</p>
+                    <li className='contact-us-email'>
+                        <a href='mailto:aimpartnersuiuc@gmail.com' target='_blank' rel="noopener noreferrer">
+                            aimpartnersuiuc@gmail.com
+                        </a>
+                        
+                    </li>
                     <li className='contact-us-discord'>
                         <a href='https://discord.com/invite/EMSf7pjKM6' target='_blank' rel="noopener noreferrer">
                             Discord

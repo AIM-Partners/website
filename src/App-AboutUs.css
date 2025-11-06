@@ -33,6 +33,7 @@ body {
     display: flex;
     align-items: flex-start;
     gap: 40px;
+    flex-wrap: nowrap;
     width: 100%;
     margin-bottom: 80px;
     box-sizing: border-box;
@@ -42,15 +43,20 @@ body {
     
 }
 
+.about-us-logo {
+    flex: 0 0 300px;
+}
+
 .about-us-logo img {
-    margin-left: 60px;
-    max-width: 700px;
+    /* margin-left: 60px;
+    max-width: 700px; */
     width: 100%;
     height: auto;
+    display: block;
 }
 
 .about-us-detail {
-    flex: 1;
+    flex: 1 1 0;
     font-size: 20px;
     line-height: 1.6;
     text-align: left;
@@ -128,7 +134,7 @@ body {
     color: #666;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 1000px) {
     .about-us {
       padding: 0 16px;
     }
@@ -142,21 +148,26 @@ body {
   
     .about-us-block {
       flex-direction: column;
-      align-items: center;
+      /* align-items: center; */
       gap: 16px;
-      padding: 0;
-      margin: 0 auto 40px;
+      /* padding: 0;
+      margin: 0 auto 40px; */
     }
     .about-us-logo img {
       margin: 0 auto;
-      max-width: 100%;
+      /* max-width: 100%; */
+      max-width: 250px;
     }
+    .about-us-logo,
     .about-us-detail {
-      margin: 0;
+      /* margin: 0;
       max-width: 100%;
       font-size: 16px;
       line-height: 1.5;
-      text-align: center;
+      text-align: center; */
+      flex: none;
+      width: 100%;
+      margin: 0;
     }
   
     .about-us-leaderships {

@@ -1,13 +1,15 @@
 import React from 'react';
-import president from '../images/no_image.png';
+import president from '../images/yunho_chang_profile.jpg';
 import vice_president from '../images/jacob_lee_profile.png';
 // import vp_jason from '../images/vp-jason_profile.png';
-import hoi from '../images/no_image.png';
-import hor from '../images/no_image.png';
-import hos from '../images/no_image.png';
+import hoi from '../images/tony_kwon_profile.jpg';
+import hor from '../images/jaeho_lim_profile.jpeg';
+import hos from '../images/arnav_saraogi_profile.png';
+import hoo from '../images/ibrahim_aldrees_profile.png';
 import logo from '../icons/aim_logo.svg';
 // import hoap from '../images/no_image.png';
 // import howd from '../images/howd_profile.png';
+// import ProfileCard from '../components/ProfileCard'
 
 
 export default function AboutUs() {
@@ -54,19 +56,6 @@ export default function AboutUs() {
             <p className='leadership-position'>Vice President</p>
           </div>
 
-          {/* <div className='leadership-card'>
-            <a
-              href='https://www.linkedin.com/in/jason-kim-bb6154267/'
-              target='_blank'
-              rel="noopener noreferrer"
-            >
-              <img src={vp_jason} alt='Jason Kim'/>
-            </a>
-            <h3 className='leadership-name'>Jason Kim</h3>
-            <p className='leadership-position'>Cornell Chapter</p>
-          </div> */}
-
-
           <div className='leadership-card'>
             <a
               href='https://www.linkedin.com/in/tonykwon02/'
@@ -93,39 +82,26 @@ export default function AboutUs() {
 
           <div className='leadership-card'>
             <a
-              href='https://www.linkedin.com/in/joonyong-um-630489369'
+              href='https://www.linkedin.com/in/arnav-saraogi/'
               target='_blank'
               rel="noopener noreferrer"
             >
-              <img src={hos} alt='Junyong Um'/>
+              <img src={hos} alt='Arnav Saraogi'/>
             </a>
-            <h3 className='leadership-name'>Joonyong Um</h3>
+            <h3 className='leadership-name'>Arnav Saraogi</h3>
             <p className='leadership-position'>Head of Software</p>
           </div>
-
-          {/* <div className='leadership-card'>
-            <a
-              href='https://www.linkedin.com/in/jiho-joung-142047270/'
-              target='_blank'
-              rel="noopener noreferrer"
-            >
-              <img src={howd} alt='Jiho Joung'/>
-            </a>
-            <h3 className='leadership-name'>Jiho Joung</h3>
-            <p className='leadership-position'>Head of West Coast Division</p>
-          </div>
-
           <div className='leadership-card'>
             <a
-              href='https://www.linkedin.com/in/tonykwon02/'
+              href='https://www.linkedin.com/in/ibrahim-aldrees-42a608256/'
               target='_blank'
               rel="noopener noreferrer"
             >
-              <img src={hoap} alt='Sungbin Park'/>
+              <img src={hoo} alt='Ibrahim Aldrees'/>
             </a>
-            <h3 className='leadership-name'>Sungbin Park</h3>
-            <p className='leadership-position'>Head of Asia Pacific Division</p>
-          </div> */}
+            <h3 className='leadership-name'>Ibrahim Aldrees</h3>
+            <p className='leadership-position'>Head of Outreach</p>
+          </div>
         </div>
       </div>
       <div className='contact-us'>
