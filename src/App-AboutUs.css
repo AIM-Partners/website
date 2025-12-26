@@ -44,13 +44,14 @@ body {
 }
 
 .about-us-logo {
-    flex: 0 0 300px;
+    flex: 0 0 500px;
 }
 
 .about-us-logo img {
     /* margin-left: 60px;
     max-width: 700px; */
     width: 100%;
+    max-width: 870px;
     height: auto;
     display: block;
 }
@@ -61,7 +62,7 @@ body {
     line-height: 1.6;
     text-align: left;
     margin-right: 20px;
-    margin-top: 50px;
+    /* margin-top: 0px; */
 }
 
 .about-us-leaderships {
@@ -188,3 +189,175 @@ body {
       max-width: 150px;
     }
 }
+
+.highlight {
+    color: var(--illini-orange);
+}
+
+
+
+
+.division-link {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .division-modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .division-modal {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 24px 28px;
+    max-width: 900px;
+    width: 90%;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* 닫기 버튼 */
+  .division-modal-close {
+    border: none;
+    background: transparent;
+    font-size: 28px;
+    cursor: pointer;
+    align-self: flex-end;
+    line-height: 1;
+  }
+  
+  .division-modal-header h2 {
+    font-size: 24px;
+    color: var(--illini-orange);
+    margin-bottom: 8px;
+  }
+  
+  .division-modal-header p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  .division-modal-body {
+    display: grid;
+    grid-template-columns: 1.1fr 1.9fr;
+    gap: 24px;
+  }
+  
+  .division-members-list {
+    border-right: 1px solid var(--separator-gray);
+    padding-right: 16px;
+    overflow-y: auto;
+  }
+  
+  .division-members-list h3 {
+    font-size: 16px;
+    margin: 10px 0 6px;
+    color: #333;
+  }
+  
+  .division-member-button {
+    width: 100%;
+    text-align: left;
+    padding: 6px 10px;
+    margin-bottom: 4px;
+    border-radius: 6px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .division-member-button:hover {
+    background-color: rgba(255, 95, 5, 0.08);
+  }
+  
+  .division-member-button.active {
+    background-color: rgba(255, 95, 5, 0.16);
+    font-weight: 600;
+  }
+  
+  .division-member-detail {
+    overflow-y: auto;
+    padding-left: 8px;
+  }
+  
+  .division-member-detail img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid var(--separator-gray);
+    margin-bottom: 16px;
+  }
+  .division-member-photo {
+    border-radius: 999px;
+    object-fit: cover;
+  }
+  
+  .division-member-detail h3 {
+    font-size: 20px;
+    margin: 0 0 4px;
+  }
+  
+  .division-member-position {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 12px;
+  }
+  
+  .division-member-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 8px;
+  }
+  
+  .division-member-links a {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid var(--illini-orange);
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--illini-orange);
+  }
+  
+  .division-member-links a:hover {
+    background-color: var(--illini-orange);
+    color: #ffffff;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .division-modal {
+      max-width: 100%;
+      width: 96%;
+      padding: 16px;
+    }
+  
+    .division-modal-body {
+      grid-template-columns: 1fr;
+    }
+  
+    .division-members-list {
+      border-right: none;
+      border-bottom: 1px solid var(--separator-gray);
+      padding-right: 0;
+      padding-bottom: 12px;
+      margin-bottom: 12px;
+    }
+  
+    .division-member-detail img {
+      width: 130px;
+      height: 130px;
+    }
+  }
+  

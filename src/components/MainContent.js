@@ -20,104 +20,53 @@ import wso from '../icons/partner_icons/wso.svg'
 export default function MainContent() {
   const events = [
     {
-      title: 'Investment Banking Bootcamp',
-      datetime: 'Sep 28 2025 · 12:00 PM CST',
+      title: 'Spring 2026 Info Night',
+      datetime: 'TBD',
       location: 'TBD',
-      description: 'Host: Alan Rodriguez Villares (10+ years IB experience at J.P. Morgan, Harris Williams, Santander)',
-      formURL: 'https://docs.google.com/forms/d/e/1FAIpQLSc_3aeNqWs-Ov_tWFUBdA6m2Sa1j_2HXmyuIe-mclqMr7zzmQ/viewform',
-    },
-    {
-      title: 'Q&A Session',
-      datetime: 'Oct 5 2025 · 2:00 PM CST',
-      location: 'TBD',
-      description: 'Host: Tim Weil (Experienced professional in high finance)',
-      formURL: 'https://docs.google.com/forms/d/e/1FAIpQLScr4WG6f_7nCwmU24TxsA0UIP0elG-bPSG_b04G9DPLGjXbTg/viewform',
-    },
-    {
-      title: 'Q&A Session',
-      datetime: 'Oct 10 2025 · 4:00 PM CST',
-      location: 'TBD',
-      description: 'Host: Patrick Curtis (Founder of Wall Street Oasis)',
-      formURL: 'https://docs.google.com/forms/d/e/1FAIpQLSfQ5XikG9JFmJl4rC4FgprvBfADwOwDv8GOOL46hrupASTABg/viewform',
+      description: 'Info Night'
     },
     {
       title: 'General Meeting',
-      datetime: 'Wed, Sep 10 2025 · 6:00 PM CST',
-      location: 'Digital Computer Lab Room 1310',
+      datetime: 'TBD',
+      location: 'TBD',
       description: 'General Meeting'
-    },
-    {
+    },{
       title: 'General Meeting',
-      datetime: 'Wed, Sep 17 2025 · 6:00 PM CST',
-      location: 'Digital Computer Lab Room 1310',
-      description: 'General Meeting'
-    },
-    {
-      title: 'General Meeting',
-      datetime: 'Wed, Sep 24 2025 · 6:00 PM CST',
+      datetime: 'TBD',
       location: 'TBD',
       description: 'General Meeting'
     },
     {
       title: 'General Meeting',
-      datetime: 'Wed, Oct 1 2025 · 6:00 PM CST',
+      datetime: 'TBD',
       location: 'TBD',
       description: 'General Meeting'
     },
     {
       title: 'General Meeting',
-      datetime: 'Wed, Oct 8 2025 · 6:00 PM CST',
+      datetime: 'TBD',
       location: 'TBD',
       description: 'General Meeting'
     },
     {
       title: 'General Meeting',
-      datetime: 'Wed, Oct 22 2025 · 6:00 PM CST',
+      datetime: 'TBD',
       location: 'TBD',
       description: 'General Meeting'
     },
     {
       title: 'General Meeting',
-      datetime: 'Wed, Nov 5 2025 · 6:00 PM CST',
+      datetime: 'TBD',
       location: 'TBD',
       description: 'General Meeting'
     },
     {
       title: 'General Meeting',
-      datetime: 'Wed, Nov 12 2025 · 6:00 PM CST',
+      datetime: 'TBD',
       location: 'TBD',
       description: 'General Meeting'
     },
-    {
-      title: 'General Meeting',
-      datetime: 'Wed, Nov 19 2025 · 6:00 PM CST',
-      location: 'TBD',
-      description: 'General Meeting'
-    },
-    {
-      title: 'General Meeting',
-      datetime: 'Wed, Nov 26 2025 · 6:00 PM CST',
-      location: 'TBD',
-      description: 'General Meeting'
-    },
-    {
-      title: 'General Meeting',
-      datetime: 'Wed, Dec 3 2025 · 6:00 PM CST',
-      location: 'TBD',
-      description: 'General Meeting'
-    },
-    {
-      title: 'General Meeting',
-      datetime: 'Wed, Dec 10 2025 · 6:00 PM CST',
-      location: 'TBD',
-      description: 'General Meeting'
-    },
-    {
-      title: 'General Meeting',
-      datetime: 'Wed, Dec 17 2025 · 6:00 PM CST',
-      location: 'TBD',
-      description: 'General Meeting'
-    }
+
   ];
   return (
     <div className="body-content">
@@ -133,13 +82,31 @@ export default function MainContent() {
                     <h2>We are a student-led corporate and quantitative finance organization at the University of Illinois Urbana Champaign.</h2>
                 </div>
                 <div className="body-content-apply">
+                    <h2 className='body-content-apply-announcement'>Application for Spring 2026 will be opened soon!</h2>
                     <h2>
                         <a
-                            href='https://aim-illinois.com/projects'
+                            // href='https://docs.google.com/forms/d/e/1FAIpQLScJvoMGYRRgFcEeo4LejKwexVggIdRnWU313DFpnCcNINnMeg/viewform?usp=header'
+                            href='/'
                             target='_blank'
                             rel='noopener noreferrer'
                         >
-                          Check Out Our October Company Research Report!
+                          Spring 2026 Research Team Application 
+                        </a>
+                        <a
+                            // href='https://docs.google.com/forms/d/e/1FAIpQLSfs_ucMFZCQsce3SfaZNWWCY7Up5lqtFpRsW1KIbzya4SHknQ/viewform?usp=header'
+                            href='/'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                        >
+                          Spring 2026 Investment Team Application 
+                        </a>
+                        <a
+                            // href='https://docs.google.com/forms/d/e/1FAIpQLSf1XQ2IbIAdlre9gPwSL34A-w-V07jlEtt_czz73NpSAR9l9A/viewform?usp=header'
+                            href='/'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                        >
+                          Spring 2026 Software Team Application 
                         </a>
                     </h2>
                 </div>
