@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../icons/aim_logo.svg'
+import logo from '../icons/aim_logo.png'
 
 export default function Projects() {
   return (
@@ -14,7 +14,7 @@ export default function Projects() {
 
                 <div className='reports-list'>
                     <div className='reports-item'>
-                        <h3 className='reports-item-month'>September Monthly Report</h3>
+                        <h3 className='reports-item-month'>February Monthly Report</h3>
                         <h4 className='reports-item-detail'>
                             {/* <a
                                 className='research-report'
@@ -24,7 +24,7 @@ export default function Projects() {
                             >
                                 Click here to view the August preview report (Full report for AIM members only)
                             </a> */}
-                            <a
+                            {/* <a
                                 className='research-report'
                                 href='/Research/Research_Sep_RKLB.pdf'
                                 target='_blank'
@@ -40,30 +40,32 @@ export default function Projects() {
                                 rel="noopener noreferrer"
                             >
                                 Click here to view the September Stock Pitch!
-                            </a>
+                            </a> */}
+                            <h4 className='reports-item-detail'>To Be Posted</h4>
                         </h4>
                     </div>
                     <div className='reports-item'>
-                        <h3 className='reports-item-month'>October Monthly Report</h3>
+                        <h3 className='reports-item-month'>March Monthly Report</h3>
                         <h4 className='reports-item-detail'>
-                            <a
+                            {/* <a
                                 className='research-report'
                                 href='/Research/Research_Oct_UNH.pdf'
                                 target='_blank'
                                 rel="noopener noreferrer"
                             >
                                 Click here to view the October Company Research!
-                            </a>
-                            <br/>
+                            </a> */}
+                            {/* <br/> */}
+                            <h4 className='reports-item-detail'>To Be Posted</h4>
                             
                         </h4>
                     </div>
                     <div className='reports-item'>
-                        <h3 className='reports-item-month'>November Monthly Report</h3>
+                        <h3 className='reports-item-month'>April Monthly Report</h3>
                         <h4 className='reports-item-detail'>To Be Posted</h4>
                     </div>
                     <div className='reports-item'>
-                        <h3 className='reports-item-month'>December Monthly Report</h3>
+                        <h3 className='reports-item-month'>May Monthly Report</h3>
                         <h4 className='reports-item-detail'>To Be Posted</h4>
                     </div>
                     
@@ -75,19 +77,19 @@ export default function Projects() {
 
                 <div className='investments-list'>
                     <div className='investments-item'>
-                        <h3 className='investments-item-month'>September Presentation</h3>
+                        <h3 className='investments-item-month'>February Presentation</h3>
                         <h4 className='investments-item-detail'>To Be Posted</h4>
                     </div>
                     <div className='investments-item'>
-                        <h3 className='investments-item-month'>October Presentation</h3>
+                        <h3 className='investments-item-month'>March Presentation</h3>
                         <h4 className='investments-item-detail'>To Be Posted</h4>
                     </div>
                     <div className='investments-item'>
-                        <h3 className='investments-item-month'>November Presentation</h3>
+                        <h3 className='investments-item-month'>April Presentation</h3>
                         <h4 className='investments-item-detail'>To Be Posted</h4>
                     </div>
                     <div className='investments-item'>
-                        <h3 className='investments-item-month'>December Presentation</h3>
+                        <h3 className='investments-item-month'>May Presentation</h3>
                         <h4 className='investments-item-detail'>To Be Posted</h4>
                     </div>
                 </div>

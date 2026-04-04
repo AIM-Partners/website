@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../icons/aim_logo.svg';
+import logo from '../icons/aim_logo.png';
 import { ReactComponent as DiscordLogo } from '../icons/discord_logo.svg';
 import { ReactComponent as LinkedinLogo } from '../icons/linkedin_logo.svg';
 import '../NavBar.css';
@@ -17,6 +17,7 @@ export default function Navbar() {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about-us">About Us</Link></li>
             <li><Link to="/projects">Projects</Link></li>
+            <li><Link to="/competition">Mental Math Competition</Link></li>
             <li>
                 <a href="https://www.linkedin.com/company/aimpartnersuiuc/" target="_blank" rel="noopener noreferrer">
                 <LinkedinLogo className="top-navbar__linkedin" />

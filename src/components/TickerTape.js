@@ -23,7 +23,7 @@ export default function TickerTape() {
     script.text = JSON.stringify({
       symbols: [
         { proName: 'FOREXCOM:SPXUSD', title: 'S&P 500' },
-        { proName: 'INDEX:NDX',       title: 'NASDAQ 100' },
+        { proName: 'NDX',       title: 'NASDAQ 100' },
         { proName: 'BITSTAMP:BTCUSD', title: 'Bitcoin' },
         { proName: 'NASDAQ:AAPL',     description: 'Apple' },
         { proName: 'NASDAQ:MSFT',     description: 'Microsoft' },

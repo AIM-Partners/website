@@ -139,6 +139,11 @@ body {
     background-color: #f0f0f0;
 }
 
+.contact-us-logo {
+    max-width: 800px;
+    height: auto;
+}
+
 
 @media screen and (max-width: 430px) {
     .projects {

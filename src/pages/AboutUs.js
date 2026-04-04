@@ -1,15 +1,16 @@
 import React, { useState } from "react";
-import logo from '../icons/aim_logo.svg';
+import logo from '../icons/aim_logo.png';
 
 // leaderships
 import president from '../images/leaderships/yunho_chang_profile.jpg';
 import vice_president from '../images/leaderships/jacob_lee_profile.png';
 import hoi from '../images/leaderships/tony_kwon_profile.jpg';
 import hor from '../images/leaderships/jaeho_lim_profile.jpeg';
-import hos from '../images/leaderships/arnav_saraogi_profile.png';
+import hos from '../images/leaderships/sameul_hos.jpg';
 import hoo from '../images/leaderships/ibrahim_aldrees_profile.png';
 
-import photo from '../images/member-fa25.png';
+// import photo from '../images/member-sp26.png';
+import photo from '../images/member-sp26.png';
 
 // members (consent only)
 import avinash from '../images/members/avinash_profile.png';
@@ -235,14 +236,16 @@ export default function AboutUs() {
         </div>
         <div className="about-us-detail">
           <p>
-            Founded in January 2020, AIM Partners is an investment management organization run by UIUC students. We comprise undergraduate and graduate students from diverse backgrounds, which enables us to take a holistic approach to our investment portfolios.
+            Founded in January 2020, Alpha Investment Management Partners (AIM Partners) is a corporate and quantitative finance organization at the University of Illinois at Urbana Champaign. 
+          </p>
+          <p>
+            Our members primarily come from Computer Science, Mathematics, Statistics, Economics, and Engineering. Over 25% of our members have competed at the USACO Gold division or higher and have qualified for the AIME or more advanced mathematical competitions.
+          </p>
+          <p>
+            AIM Partners focuses on developing quantitative reasoning, structured decision making, and technical depth through market research, algorithmic trading simulations, and applied financial modeling initiatives. Our mission is to cultivate analytically rigorous students prepared for high performance roles in quantitative trading, technology, and finance.
           </p>
 
-          <p>
-            Our mission is to provide unique market insights and deliver exceptional investment returns to our members. Through AIM Partners, not only do we hope to provide both educational and practical experience for students who have a passion for investment, but also to continue our ongoing partnerships with our clients.
-          </p>
-
-          <p>
+          {/* <p>
             To support this mission, AIM Partners is organized into three divisions{" "}
             <span
               className="highlight division-link"
@@ -265,25 +268,13 @@ export default function AboutUs() {
               <strong>Software</strong>
             </span>
             .
-          </p>
+          </p> */}
         </div>
       </div>
 
       <div className="about-us-leaderships">
         <h2>Leaderships</h2>
         <div className="leaderships-grid">
-          <div className="leadership-card">
-            <a
-              href="https://www.linkedin.com/in/yunhoc1204"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={president} alt="Yunho Chang" />
-            </a>
-            <h3 className="leadership-name">Yunho Chang</h3>
-            <p className="leadership-position">President</p>
-          </div>
-
           <div className="leadership-card">
             <a
               href="https://www.linkedin.com/in/jacob-lee-a5164734a/"
@@ -293,7 +284,19 @@ export default function AboutUs() {
               <img src={vice_president} alt="Jacob Lee" />
             </a>
             <h3 className="leadership-name">Jacob Lee</h3>
-            <p className="leadership-position">Vice President</p>
+            <p className="leadership-position">President</p>
+          </div>
+
+          <div className="leadership-card">
+            <a
+              href="https://www.linkedin.com/in/yunhoc1204"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={president} alt="Yunho Chang" />
+            </a>
+            <h3 className="leadership-name">Yunho Chang</h3>
+            <p className="leadership-position">Co-President, Head of Investment</p>
           </div>
 
           <div className="leadership-card">
@@ -305,9 +308,8 @@ export default function AboutUs() {
               <img src={hoi} alt="Tony Kwon" />
             </a>
             <h3 className="leadership-name">Tony Kwon</h3>
-            <p className="leadership-position">Head of Investment</p>
+            <p className="leadership-position">Vice President</p>
           </div>
-
           <div className="leadership-card">
             <a
               href="https://www.linkedin.com/in/jaeho-lim/"
@@ -317,32 +319,22 @@ export default function AboutUs() {
               <img src={hor} alt="Jaeho Lim" />
             </a>
             <h3 className="leadership-name">Joey Lim</h3>
-            <p className="leadership-position">Head of Research</p>
+            <p className="leadership-position">VP Head of Research</p>
           </div>
 
           <div className="leadership-card">
             <a
-              href="https://www.linkedin.com/in/arnav-saraogi/"
+              href="https://www.linkedin.com/in/sam-vishnevskiy-a439b5286/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={hos} alt="Arnav Saraogi" />
+              <img src={hos} alt="Samuel Vishnevskiy" />
             </a>
-            <h3 className="leadership-name">Arnav Saraogi</h3>
+            <h3 className="leadership-name">Samuel Vishnevskiy</h3>
             <p className="leadership-position">Head of Software</p>
           </div>
 
-          <div className="leadership-card">
-            <a
-              href="https://www.linkedin.com/in/ibrahim-aldrees-42a608256/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={hoo} alt="Ibrahim Aldrees" />
-            </a>
-            <h3 className="leadership-name">Ibrahim Aldrees</h3>
-            <p className="leadership-position">Head of Outreach</p>
-          </div>
+          
         </div>
       </div>
 

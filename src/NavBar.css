@@ -23,8 +23,9 @@ body {
 }
   
 .top-navbar__logo img {
-    width: 150px;
-    height: 66px;
+    margin: 10px 10px 10px 10px;
+    width: auto;
+    height: 40px;
 }
   
 .top-navbar__links {
