@@ -11,11 +11,12 @@ Push your code to the repo using
 ```
 git add .
 git commit -m "something"
-git push origin main
+git push origin master
 ```
 
-then netlify will automatically deploy the website.
+Then, netlify will automatically deploy the website.
 
+<br/>
 
 ## If using private repo
 
