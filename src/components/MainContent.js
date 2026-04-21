@@ -84,7 +84,7 @@ export default function MainContent() {
                   <img src={logo} alt='aim_logo'/>
                 </div>
                 <div className="body-content-motto">
-                    "Test"
+                    "Learn While You Earn"
                 </div>
                 <div className='body-content-pr'>
                     <h2>We are a student-led corporate and quantitative finance organization at the University of Illinois Urbana Champaign.</h2>
