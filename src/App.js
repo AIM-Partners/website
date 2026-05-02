@@ -40,7 +40,7 @@ function App() {
         <Route path='/about-us' element={<AboutUs />}/>
         {/* join us page */}
         <Route path='/projects' element={<Projects />}/>
-        <Route path='/competition' element={<Competition />}/>
+        {/* <Route path='/competition' element={<Competition />}/> */}
         <Route path="/admin" element={<Admin />} />
       </Routes>
     </div>

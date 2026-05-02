@@ -3,7 +3,7 @@ import { getAuth } from "firebase/auth";
 import { getFirestore, doc, collection } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBOvcEPkqm3AQQRXtUMoKUXE26LvnC6Nrc",
+  apiKey: "API_KEY", /* this should give an error right now. TODO: change a new project's API key */
   authDomain: "mental-math-competition-6264c.firebaseapp.com",
   projectId: "mental-math-competition-6264c",
   storageBucket: "mental-math-competition-6264c.firebasestorage.app",
