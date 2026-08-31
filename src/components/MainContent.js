@@ -90,7 +90,14 @@ export default function MainContent() {
                     <h2>We are a student-led corporate and quantitative finance organization at the University of Illinois Urbana Champaign.</h2>
                 </div>
                 <div className="body-content-apply">
-                    <h2 className='body-content-apply-announcement'>Application for Spring 2026 is closed. <br></br>If you're interested in our group, please join our discord for more information!</h2>
+                    <h2 className='body-content-apply-announcement'>
+                      Applications for Fall 2026 are open until September 2nd, at 11:59 PM.
+                      <br />
+                      <br />
+                      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfbVmQRQGvIeRChDkLOkePkKm88pVkddlql0y9u-KdqfBFksA/viewform?usp=sharing&ouid=100732198824145842023" target="_blank" rel="noopener noreferrer">Investment Team Application</a>
+                      <br />
+                      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMAblRXD-WqctTQaMP0CTpOCxVoK4LjG5T3cOVo6l9t-VpRw/viewform?usp=preview" target="_blank" rel="noopener noreferrer">Software Team Application</a>
+                    </h2>
                     {/* <h2>
                         <a
                             href='https://docs.google.com/forms/d/e/1FAIpQLScJvoMGYRRgFcEeo4LejKwexVggIdRnWU313DFpnCcNINnMeg/viewform?usp=header'
@@ -214,7 +221,7 @@ export default function MainContent() {
             <div className='placements-main'>
                   <h2 className='placements-main-text'>
                       <BlurText
-                        text="Placements"
+                        text="Placement"
                         delay={50}
                         animateBy="letters"
                         direction="top"

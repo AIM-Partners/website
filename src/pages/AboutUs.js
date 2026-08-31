@@ -9,6 +9,11 @@ import hor from '../images/leaderships/jaeho_lim_profile.jpeg';
 import hos from '../images/leaderships/sameul_hos.jpg';
 import hoo from '../images/leaderships/ibrahim_aldrees_profile.png';
 
+// new leadership images
+import sam_leader from '../images/leaderships/vishnevskiy_samuel.jpg';
+import nick_leader from '../images/leaderships/becker_nick.jpg';
+import luke_leader from '../images/leaderships/zimmerman_luke.png';
+
 // import photo from '../images/member-sp26.png';
 import photo from '../images/member-sp26.png';
 
@@ -273,68 +278,44 @@ export default function AboutUs() {
       </div>
 
       <div className="about-us-leaderships">
-        <h2>Leaderships</h2>
+        <h2>Leadership</h2>
         <div className="leaderships-grid">
-          <div className="leadership-card">
-            <a
-              href="https://www.linkedin.com/in/jacob-lee-a5164734a/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={vice_president} alt="Jacob Lee" />
-            </a>
-            <h3 className="leadership-name">Jacob Lee</h3>
-            <p className="leadership-position">President</p>
-          </div>
-
-          <div className="leadership-card">
-            <a
-              href="https://www.linkedin.com/in/yunhoc1204"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={president} alt="Yunho Chang" />
-            </a>
-            <h3 className="leadership-name">Yunho Chang</h3>
-            <p className="leadership-position">Co-President, Head of Investment</p>
-          </div>
-
-          <div className="leadership-card">
-            <a
-              href="https://www.linkedin.com/in/tonykwon02/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={hoi} alt="Tony Kwon" />
-            </a>
-            <h3 className="leadership-name">Tony Kwon</h3>
-            <p className="leadership-position">Vice President</p>
-          </div>
-          <div className="leadership-card">
-            <a
-              href="https://www.linkedin.com/in/jaeho-lim/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={hor} alt="Jaeho Lim" />
-            </a>
-            <h3 className="leadership-name">Joey Lim</h3>
-            <p className="leadership-position">VP Head of Research</p>
-          </div>
-
           <div className="leadership-card">
             <a
               href="https://www.linkedin.com/in/sam-vishnevskiy-a439b5286/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={hos} alt="Samuel Vishnevskiy" />
+              <img src={sam_leader} alt="Sam Vishnevskiy" />
             </a>
-            <h3 className="leadership-name">Samuel Vishnevskiy</h3>
+            <h3 className="leadership-name">Sam Vishnevskiy</h3>
+            <p className="leadership-position">President</p>
+          </div>
+
+          <div className="leadership-card">
+            <a
+              href="https://www.linkedin.com/in/nickolas-becker05/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={nick_leader} alt="Nick Becker" />
+            </a>
+            <h3 className="leadership-name">Nick Becker</h3>
+            <p className="leadership-position">Head of Investment</p>
+          </div>
+
+          <div className="leadership-card">
+            <a
+              href="https://www.linkedin.com/in/lukerzimm/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={luke_leader} alt="Luke Zimmerman" />
+            </a>
+            <h3 className="leadership-name">Luke Zimmerman</h3>
             <p className="leadership-position">Head of Software</p>
           </div>
 
-          
         </div>
       </div>
 
