@@ -14,13 +14,11 @@ import prot from '../icons/company_icons/protiviti_logo.svg'
 import bnp from '../icons/company_icons/bnp-paribas_logo.svg'
 import sc from '../icons/company_icons/standard-chartered_logo.svg'
 import BlurText from './BlurText';
-import wso from '../icons/partner_icons/wso.png'
 import deshaw from '../icons/company_icons/deshaw_logo.png'
 import google from '../icons/company_icons/google_logo.svg'
 import imc from '../icons/company_icons/imc_logo.png'
 import jpmc from '../icons/company_icons/jpmc_logo.png'
 import ms from '../icons/company_icons/morgan_stanley_logo.png'
-import hrt from '../icons/partner_icons/hudson_river_trading.svg'
 import janestreet from '../icons/partner_icons/jane_street_logo.png'
 
 // import image from '../images/img.jpg'
@@ -91,12 +89,7 @@ export default function MainContent() {
                 </div>
                 <div className="body-content-apply">
                     <h2 className='body-content-apply-announcement'>
-                      Applications for Fall 2026 are open until September 2nd, at 11:59 PM.
-                      <br />
-                      <br />
-                      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfbVmQRQGvIeRChDkLOkePkKm88pVkddlql0y9u-KdqfBFksA/viewform?usp=sharing&ouid=100732198824145842023" target="_blank" rel="noopener noreferrer">Investment Team Application</a>
-                      <br />
-                      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMAblRXD-WqctTQaMP0CTpOCxVoK4LjG5T3cOVo6l9t-VpRw/viewform?usp=preview" target="_blank" rel="noopener noreferrer">Software Team Application</a>
+                      Applications for Fall 2026 are now closed. Apply again in the spring!
                     </h2>
                     {/* <h2>
                         <a
@@ -199,22 +192,8 @@ export default function MainContent() {
             />
           </h2>
 
-          {/* ORANGE */}
-          <div className='sponsor-tier sponsor-tier-orange'>
-            <div className='sponsor-tier-header'><span className='sponsor-tier-header-orange'>Orange</span></div>
-            <div className='sponsor-tier-logos'>
-              <img src={hrt} alt='HRT logo' className='sponsor-logo'/>
-              <img src={janestreet} alt='Jane Street logo' className='sponsor-logo'/>
-            </div>
-          </div>
-
-          {/* BLUE */}
-          <div className='sponsor-tier sponsor-tier-blue'>
-            <div className='sponsor-tier-header'><span className='sponsor-tier-header-blue'>Blue</span></div>
-
-            <div className='sponsor-tier-logos'>
-              <img src={wso} alt='WSO logo' className='sponsor-logo'/>
-            </div>
+          <div className='sponsor-tier-logos'>
+            <img src={janestreet} alt='Jane Street logo' className='sponsor-logo'/>
           </div>
         </div>
         <div className='placements'>
